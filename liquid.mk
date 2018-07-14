@@ -18,20 +18,20 @@
 $(call inherit-product, device/lenovo/kuntao/full_kuntao.mk)
 
 # Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
 # Boot animation res
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Override build properties.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="kuntao_row-user 7.0 NRD90N P2a42_S244_170725_ROW release-keys"
-
+    PRIVATE_BUILD_DESC="kuntao_row-user 7.0 NRD90N P2a42_S244_170725_ROW release-keys" \
+         DEVICE_MAINTAINERS="Ruturaj(ruturajjena)"
 BUILD_FINGERPRINT := Lenovo/kuntao_row/P2a42:7.0/NRD90N/P2a42_S244_170725_ROW:user/release-keys
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kuntao
-PRODUCT_NAME := aosp_kuntao
+PRODUCT_NAME := liquid_kuntao
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_RELEASE_NAME := kuntao
