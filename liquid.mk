@@ -18,7 +18,7 @@
 $(call inherit-product, device/lenovo/kuntao/full_kuntao.mk)
 
 # Inherit some common aosp stuff.
-$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Boot animation res
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -31,7 +31,7 @@ BUILD_FINGERPRINT := Lenovo/kuntao_row/P2a42:7.0/NRD90N/P2a42_S244_170725_ROW:us
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kuntao
-PRODUCT_NAME := liquid_kuntao
+PRODUCT_NAME := lineage_kuntao
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_RELEASE_NAME := kuntao
