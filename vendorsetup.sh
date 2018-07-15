@@ -1,1 +1,1 @@
-add_lunch_combo liquid_kuntao-userdebug
+add_lunch_combo lineage_kuntao-userdebug
